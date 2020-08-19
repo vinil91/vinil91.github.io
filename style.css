@@ -131,7 +131,7 @@ p {
 
 @media all and (min-width: 602px) and (max-width: 800px) {
 	.header__photo {
-		display: none;
+		width: 25%;
 	}
 }
 
@@ -143,18 +143,14 @@ p {
 	}
 	
 	.header__photo {
-		display: none;
+		width: 25%;
 	}
 	
 	.header__name, .header__contacts {
 		width: 100%;
 		text-align: center;
 	}
-	
-	.section__title, .section__content {
-		width: 100%;
-	}
-	
+
 	.section__title {
 		margin-left: -2px;
 		font-size: 1.25em;
@@ -165,13 +161,25 @@ p {
 	.header {
 		padding: 15px 15px;
 	}
-	
+	.section, .header {
+		flex-direction: column;
+	}
+
+	.header__photo {
+		width: 35%;
+	}
+
+	.section__title, .section__content {
+		width: 100%;
+	}
+
 	.section {
 		padding: 15px 0 0;
 	}
 	
 	.main {
 		padding: 0 25px;
+		text-align: center;
 	}
 	
 	.header__fullname {
